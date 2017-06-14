@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <Console name="STDOUT" target="SYSTEM_OUT">
+            <PatternLayout pattern="[benchmarks] %d %-5p: %c - %m%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <!-- Application Loggers -->
+        <Logger name="org.graylog2" level="info"/>
+        <Logger name="org.graylog" level="info"/>
+        <Logger name="org.graylog2.indexer.messages.Messages" level="debug" />
+        <Root level="warn">
+            <AppenderRef ref="STDOUT"/>
+        </Root>
+    </Loggers>
+</Configuration>
